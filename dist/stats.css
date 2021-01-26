@@ -1,0 +1,54 @@
+input {
+  border-radius: 10%;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -ms-border-radius: 10%;
+  -o-border-radius: 10%;
+  border: 1px solid #eee;
+  max-width: 100px;
+  margin: 10px;
+  padding: 2px;
+}
+
+.col-sm-3,
+.col-sm-6 {
+  border-radius: 10%;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -ms-border-radius: 10%;
+  -o-border-radius: 10%;
+  border: 1px solid #eee;
+}
+.smal {
+  max-width: 51.5px;
+  height: 10%;
+  font-weight: medium;
+  font-size: small;
+}
+.normal {
+  max-width: 108px;
+  height: 10%;
+  font-size: large;
+  font-weight: bold;
+}
+.fit {
+  max-width: 80px;
+}
+
+.weights {
+  max-width: 60px;
+  font-size: smaller;
+}
+
+.inventory {
+  font-size: smaller;
+  max-width: 110px;
+}
+.inventory1 {
+  font-size: smaller;
+  max-width: 140px;
+}
+
+.btn {
+  width: 200px;
+}
