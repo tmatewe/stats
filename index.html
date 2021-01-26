@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stats.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <!-- poisson distribution -->
+        <div class="col-sm-3">
+          <h2>POISSON</h2>
+          <input type="text" value="rate" /><input
+            type="text"
+            id="lamda"
+          /><br />
+          <input type="text" value="x" /><input
+            type="text"
+            id="x"
+          /><br /><br />
+          <button class="btn btn-outline-dark btn-sm" value="poisson">Click</button><br /><br />
+          <input type="text" value="Answer" /><input type="text" id="poisson" /><br><br>
+          <input type="text" value="Total" /><input type="text" id="totalPoisson" /><br><br>
+        </div>
+        <!-- normal distribution  -->
+        <div class="col-sm-3">
+          <h2>BINOMIAL</h2>
+          <input type="text" value="n" /><input type="text" id="n" /><br />
+          <input type="text" value="p" /><input type="text" id="p" /><br />
+          <input type="text" value="r" /><input
+            type="text"
+            id="r"
+          /><br /><br />
+          <button class="btn btn-outline-dark btn-sm" value="binomial">Click</button><br /><br />
+          <input type="text" value="Answer" /><input
+            type="text"
+            id="binomial"
+          /> <br><br>
+          <input type="text" value="Total" /><input
+          type="text"
+          id="totalBinomial"
+        />
+        </div>
+        <div class="col-sm-3">
+          <!-- Normal distribution -->
+          <h2>NORMAL</h2>
+          <input type="text" value="Mean" /><input
+            type="text"
+            id="mean"
+          /><br />
+          <input type="text" value="Std deviation" /><input
+            type="text"
+            id="std"
+          /><br />
+          <input type="text" value="X" /><input
+            type="text"
+            id="xNormal"
+          /><br /><br />
+          <button class="btn btn-outline-dark btn-sm" value="normal">Click</button><br /><br />
+          <input type="text" value="Z" /><input type="text" id="normal" />
+          <input type="text" value="Tables" /><input
+            type="text"
+            id="tables"
+          /><br />
+          <input type="text" value="area" /><input
+            type="text"
+            id="area"
+          /><br /><br />
+          <button class="btn btn-outline-dark btn-sm" value="finalAnswer">Final Answer</button
+          ><br><br><input type="text" id="finalAnswer" /><br>
+          <div id="difference"></div>
+        </div>
+        <div class="col-sm-3">
+          <!-- Descrete variables -->
+          <h2>DESCRETE</h2>
+          <input type="text" value="X" /><input
+            type="text"
+            value="Probability"
+          />
+          <input type="text" id="x1" /><input type="text" id="p1" /><br />
+          <input type="text" id="x2" /><input type="text" id="p2" /><br />
+          <input type="text" id="x3" /><input type="text" id="p3" /><br />
+          <input type="text" id="x4" /><input type="text" id="p4" /><br />
+          <input type="text" id="x5" /><input type="text" id="p5" /><br />
+          <input type="text" id="x6" /><input type="text" id="p6" /><br /><br />
+          <button class="btn btn-outline-dark btn-sm" value="descrete">Click</button><br /><br />
+          <input type="text" value="Average" /><input
+            type="text"
+            id="average"
+          /><br />
+          <input type="text" value="variance" /><input
+            type="text"
+            id="variance"
+          /><br />
+          <input type="text" value="std deviation" /><input
+            type="text"
+            id="deviation"
+          /><br /><br>
+        </div>
+        </div><br><br>
+        <div class="row">
+        <div class="col-sm-6">
+          <h2>BAYES THEOREM</h2>
+          <input type="text" value="P(A)" class="normal" />
+          <input type="text" class="normal" id="positive" value="0.02" />
+          <input type="text" value="P(A')" class="normal" />
+          <input type="text" class="normal" id="negative" value="0.98" /><br />
+          <input type="text" value="P(B/A)" class="smal" />
+          <input type="text" id="pP" class="smal" value="0.95" />
+          <input type="text" value="P(B'/A)" class="smal" />
+          <input type="text" class="smal" id="pN" value="0.05" />
+          <input type="text" value="P(A'/B" class="smal" />
+          <input type="text" class="smal" id="nP" value="0.1" />
+          <input type="text" value="P(A'/B'" class="smal" />
+          <input type="text" class="smal" id="nN" value="0.9" /><br /><br />
+          <button class="btn btn-outline-dark btn-sm">Favourable</button
+          ><input type="text" id="favourable" /><br /><br />
+          <button class="btn btn-outline-dark btn-sm">Unfavourable</button
+          ><input type="text" id="unFavourable" /><br /><br />
+        </div>
+        <div class="col-sm-6">
+          <h2>CHAPTER 3</h2>
+          <input type="text" value="Projects" class="fit">
+          <input type="text" value="Good" class="fit" >
+          <input type="text" value="Fair" class="fit" >
+          <input type="text" value="Bad" class="fit">
+          <input type="text" value="EMV" class="fit">
+          <br>
+          <input type="text" value="Project1" class="fit">
+          <input type="text" id="good1" class="fit" >
+          <input type="text" id="fair1" class="fit" >
+          <input type="text" id="bad1" class="fit" >
+          <input type="text" id="emv1" class="fit" >
+          <br>
+          <input type="text" value="Project2" class="fit">
+          <input type="text" id="good2" class="fit" >
+          <input type="text" id="fair2" class="fit" >
+          <input type="text" id="bad2" class="fit" >
+          <input type="text" id="emv2" class="fit" >
+          <br>
+          <input type="text" value="Project3" class="fit">
+          <input type="text" id="good3" class="fit">
+          <input type="text" id="fair3" class="fit">
+          <input type="text" id="bad3" class="fit">
+
+          <input type="text" id="emv3" class="fit" >
+          <br>
+          <input type="text" value="Prob" class="fit">
+          <input type="text" id="probability1" class="fit">
+          <input type="text" id="probability2" class="fit">
+          <input type="text" id="probability3" class="fit">
+          <br><br>
+          <button class="btn btn-outline-dark btn-sm" value="emv-btn">EMV</button><input type="text" id="emvAnswer"><br><br>
+          <input type="text" value="EVw1"><input type="text" value="EVwPI2"><input type="text" value="EVwPI3"><br>
+          <input type="text" id="evwpi1"><input type="text" id="evwpi2"><input type="text" id="evwpi3"><br><br>
+          <button class="btn btn-outline-dark btn-sm" value="evwpi-btn">EVwPI</button><input type="text" id="evwpiAnswer"><br><br>
+          <button class="btn btn-outline-dark btn-sm" value="evpi">EVPI</button><input type="text" id="evpiAnswer">
+          
+        </div>
+      </div><br><br>
+      <div class="row">
+        <div class="col-sm-6">
+          <h2>FORECASTING</h2>
+          <input type="text" value="Actual"><input type="text" value="forecast"><input type="text" value="|error|"><br>
+          <input type="text" id="actual1" placeholder="45"><input type="text" id="forecast1"><input type="text"  id="error1"><br>
+          <input type="text" id="actual2" placeholder="50"><input type="text" id="forecast2"><input type="text" id="error2"><br>
+          <input type="text" id="actual3" placeholder="52"><input type="text" id="forecast3"><input type="text" id="error3" ><br>
+          <input type="text" id="actual4" placeholder="56"><input type="text" id="forecast4"><input type="text" id="error4" ><br>
+          <input type="text" id="actual5" placeholder=58><input type="text" id="forecast5"><input type="text" id="error5" ><br>
+          <input type="text" id="actual6" value="0"><input type="text" id="forecast6"><input type="text" id="error6"><br>
+          <input type="text" id="actual7" value="0"><input type="text" id="forecast7"><input type="text" id="error7"><br>
+          <input type="text" id="actual8" value="0"><input type="text" id="forecast8"><input type="text"  id="error8"><br>
+          <input type="text" id="actual9" value="0"><input type="text" id="forecast9"><input type="text" id="error9" ><br>
+          <input type="text" id="actual10" value="0"><input type="text" id="forecast10"><input type="text" id="error10" ><br>
+          <input type="text" id="actual11" value="0"><input type="text" id="forecast11"><input type="text"  id="error11"><br>
+          <input type="text" id="actual12" value="0"><input type="text" id="forecast12"><input type="text"  id="error12"><br>
+          <br>
+         
+          <button class="btn btn-outline-dark btn-sm" value="2pma">2-period moving average</button>
+          <button class="btn btn-outline-dark btn-sm" value="3pma">3-period moving average</button><br><br>
+          <button class="btn btn-outline-dark btn-sm" value="4pma">4-period moving average</button>
+          <button class="btn btn-outline-dark btn-sm" value="5pma">5-period moving average</button><br><br>
+          <input type="text" class="weights" value="weight 1">
+          <input type="text" class="weights" value="weight 2">
+          <input type="text" class="weights" value="weight 3">
+          <input type="text" class="weights" value="weight 4">
+          <input type="text"  value="Total" class="weights" ><br>
+          <input type="text" class="weights" id="weight1" value="1">
+          <input type="text" class="weights" id="weight2" value="2">
+          <input type="text" class="weights" id="weight3" value="3">
+          <input type="text" class="weights" id="weight4" value="4">
+          <input type="text" id="totalWeight" class="weights"><br><br>
+          <button class="btn btn-outline-dark btn-sm" value="2mwa">2-period weighted average</button>
+          <button class="btn btn-outline-dark btn-sm" value="3mwa">3-period weighted average</button><br><br>
+          <input type="text" value="Alpha" class="weights"><input type="text" value="Number" class="weights" ><input type="text" value="MAD"class="weights" ><input  value="MSE"class="weights" ><input  value="MAPE"class="weights" ><br><input type="text" id="alpha" placeholder="0.2" class="weights" ><input type="text" id="num" class="weights" placeholder="5"><input type="text" id="mad" class="weights" ><input type="text" id="mse" class="weights"></input><input type="text" id="mape" class="weights"><br><br>
+          <button class="btn btn-outline-dark btn-sm" value="exponentialSmoothing">Exponential smoothing</button>
+          <button class="btn btn-outline-dark btn-sm" value="mad">MAD, MSE & MAPE</button><br><br>
+        </div>
+        <div class="col-sm-6">
+          <h2>PROJECT MANAGEMENT</h2>
+          <input type="text" class="weights" value="a">
+          <input type="text" class="weights" value="m">
+          <input type="text" class="weights" value="b">
+          <input type="text" class="weights" value="EV">
+          <input type="text" class="weights" value="std">
+          <input type="text"  value="varience">
+         <br>
+          <input type="text" class="weights" id="a1" placeholder="1">
+          <input type="text" class="weights" id="m1" placeholder="2">
+          <input type="text" class="weights" id="b1" placeholder="3">
+          <input type="text" class="weights" id="evPM1">
+          <input type="text" class="weights" id="stdPM1">
+          <input type="text"  id="varPM1"><br>
+          <input type="text" class="weights" id="a2">
+          <input type="text" class="weights" id="m2">
+          <input type="text" class="weights" id="b2">
+          <input type="text" class="weights" id="evPM2">
+          <input type="text" class="weights" id="stdPM2">
+          <input type="text" id="varPM2"><br>
+          <input type="text" class="weights" id="a3">
+          <input type="text" class="weights" id="m3">
+          <input type="text" class="weights" id="b3">
+          <input type="text" class="weights" id="evPM3">
+          <input type="text" class="weights" id="stdPM3">
+          <input type="text" id="varPM3"><br>
+          <input type="text" class="weights" id="a4">
+          <input type="text" class="weights" id="m4">
+          <input type="text" class="weights" id="b4">
+          <input type="text" class="weights" id="evPM4">
+          <input type="text" class="weights" id="stdPM4">
+          <input type="text"  id="varPM4"><br>
+          <input type="text" class="weights" id="a5">
+          <input type="text" class="weights" id="m5">
+          <input type="text" class="weights" id="b5">
+          <input type="text" class="weights" id="evPM5">
+          <input type="text" class="weights" id="stdPM5">
+          <input type="text"  id="varPM5"><br>
+          <input type="text" class="weights" id="a6">
+          <input type="text" class="weights" id="m6">
+          <input type="text" class="weights" id="b6">
+          <input type="text" class="weights" id="evPM6">
+          <input type="text" class="weights" id="stdPM6">
+          <input type="text" id="varPM6"><br>
+          <input type="text" class="weights" id="a7">
+          <input type="text" class="weights" id="m7">
+          <input type="text" class="weights" id="b7" >
+          <input type="text" class="weights" id="evPM7">
+          <input type="text" class="weights" id="stdPM7">
+          <input type="text"  id="varPM7"><br>
+          <input type="text" class="weights" id="a8">
+          <input type="text" class="weights" id="m8">
+          <input type="text" class="weights" id="b8">
+          <input type="text" class="weights" id="evPM8">
+          <input type="text" class="weights" id="stdPM8">
+          <input type="text" id="varPM8"><br>
+          <input type="text" class="weights" id="a9" >
+          <input type="text" class="weights" id="m9">
+          <input type="text" class="weights" id="b9" >
+          <input type="text" class="weights" id="evPM9">
+          <input type="text" class="weights" id="stdPM9">
+          <input type="text"  id="varPM9"><br>
+          <input type="text" class="weights" id="a10">
+          <input type="text" class="weights" id="m10" >
+          <input type="text" class="weights" id="b10" >
+          <input type="text" class="weights" id="evPM10">
+          <input type="text" class="weights" id="stdPM10">
+          <input type="text" id="varPM10"><br>
+          <input type="text" class="weights" id="a11" >
+          <input type="text" class="weights" id="m11">
+          <input type="text" class="weights" id="b11">
+          <input type="text" class="weights" id="evPM11">
+          <input type="text" class="weights" id="stdPM11">
+          <input type="text"  id="varPM11"><br>
+          <input type="text" class="weights" id="a12">
+          <input type="text" class="weights" id="m12">
+          <input type="text" class="weights" id="b12">
+          <input type="text" class="weights" id="evPM12">
+          <input type="text" class="weights" id="stdPM12">
+          <input type="text"  id="varPM12"><br><br>
+          
+          <button class="btn btn-outline-dark btn-sm" value="projectManagement">EV,STD & VARIENCE</button><br><br>
+          
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <h2>INVENTORY</h2>
+          <input type="text" value="Annual Demand" class="inventory"><input type="text" value="Cost per unit"class="inventory" ><input type="text" value="Ordering cost" class="inventory"><input type="text" value="Carrying costs" class="inventory" ><br>
+          <input type="text" id="annualDemand" placeholder="1000" class="inventory" ><input type="text" id="costPerUnit" placeholder="100" class="inventory"><input type="text" id="orderingCosts" placeholder="10" class="inventory" ><input type="text" id="carryingCosts" placeholder="0.5" class="inventory" ><br><br>
+          <button class="btn btn-outline-dark btn-sm" value="eoq" class="inventory1" >Click</button><br><br>
+          <input type="text" value="EOQ" class="inventory1"><input type="text" id="eoq" class="weights"><br><br>
+          <input type="text" value="Average Inventory" class="inventory1"><input type="text" id="averageInventory" class="weights" ><br><br>
+          <input type="text" value="Orders per year" class="inventory1" ><input type="text" id="ordersPerYear" class="weights"><br><br>
+          <input type="text" value="Annual ordering costs" class="inventory1" ><input type="text" id="annualOrderingCosts" class="weights"><br><br>
+          <input type="text" value="Annual Carrying Costs" class="inventory1"><input type="text" id="annualCarryingCosts" class="weights"><br><br>
+        </div>
+      </div>
+      </div>
+      <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="stats.js"></script>
+  </body>
+</html>
